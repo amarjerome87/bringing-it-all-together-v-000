@@ -47,8 +47,8 @@ def save
   dog
 end
 
-def self.new_from_db(type)
-  Dog.new(id:type[0], name:type[1], breed:type[2])
+def self.new_from_db(row)
+  Dog.new(id:row[0], name:row[1], breed:row[2])
 end
 
 
