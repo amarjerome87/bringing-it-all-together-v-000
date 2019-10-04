@@ -48,6 +48,7 @@ def save
 end
 
 def self.new_from_db(type)
+  binding.pry
   Dog.new(type[1], type[2])
 end
 
