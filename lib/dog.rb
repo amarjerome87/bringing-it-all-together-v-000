@@ -67,8 +67,8 @@ def self.find_or_create_by(name:, breed:)
  else
    dog = self.create(name: name, album: album)
  end
- dog 
+ dog
 end
-end
+
 
 end
