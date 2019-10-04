@@ -1,3 +1,4 @@
+require 'pry'
 class Dog
 
   attr_accessor :name, :breed, :id
@@ -44,6 +45,10 @@ def save
   dog = Dog.new(name:name, breed:breed)
   dog.save
   dog
+end
+
+def self.new_from_db(type)
+  Dog.new(type[1], type[2])
 end
 
 
