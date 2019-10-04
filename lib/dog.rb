@@ -52,8 +52,9 @@ def self.new_from_db(row)
   Dog.new(id:row[0], name:row[1], breed:row[2])
 end
 
-def self.find_by_id
-end 
+def self.find_by_id(x)
+  binding.pry
+end
 
 
 end
