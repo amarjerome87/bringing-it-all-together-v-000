@@ -6,6 +6,7 @@ class Dog
 def initialize(id: nil, name:, breed:)
   @name = name
   @breed = breed
+  @id = id 
 end
 
 def self.create_table
@@ -49,7 +50,7 @@ end
 
 def self.new_from_db(row)
   Dog.new(id:row[0], name:row[1], breed:row[2])
-  binding.pry
+  #binding.pry
 end
 
 
