@@ -80,6 +80,9 @@ end
 
 
 def update
-end 
+  sql = "UPDATE dogs SET name = ?, breed = ? WHERE id = ?"
+  DB[:conn].execute(sql, self.name, self.breed, self.id)
+end
+end
 
 end
